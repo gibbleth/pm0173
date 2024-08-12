@@ -2,7 +2,7 @@ spring:
   application:
     name: pm0173
   datasource:
-    url: jdbc:derby:gradepros;create=true
+    url: jdbc:derby:pm0173;create=true
     driver-class-name: org.apache.derby.jdbc.EmbeddedDriver
 server:
   port: 8080

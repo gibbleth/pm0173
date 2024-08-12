@@ -7,6 +7,7 @@ import jakarta.persistence.Id;
 import lombok.Data;
 
 import java.sql.Date;
+import java.time.LocalDate;
 
 @Entity
 @Data
@@ -16,9 +17,9 @@ public class Rental {
     Long rentalId;
     Long customerId;
     Long storeId;
-    Date reservedDate;
-    Date rentedDate;
-    Date returnDate;
-    Date actualReturnDate;
+    LocalDate reservedDate;
+    LocalDate rentedDate;
+    LocalDate returnDate;
+    LocalDate actualReturnDate;
     String contract;
 }
