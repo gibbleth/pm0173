@@ -6,6 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
 
+import java.math.BigDecimal;
 import java.sql.Date;
 import java.time.LocalDate;
 
@@ -15,11 +16,15 @@ public class Rental {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long rentalId;
-    Long customerId;
     Long storeId;
     LocalDate reservedDate;
     LocalDate rentedDate;
     LocalDate returnDate;
     LocalDate actualReturnDate;
+    int rentalDays;
+    BigDecimal preDiscountCharge;
+    BigDecimal discountPercent;
+    BigDecimal discountAmount;
+    BigDecimal finalCharge;
     String contract;
 }

@@ -6,6 +6,8 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
 
+import java.util.function.BiConsumer;
+
 @Entity
 @Data
 public class RentalUnit {
@@ -14,4 +16,6 @@ public class RentalUnit {
     Long rentalUnitId;
     Long rentalId;
     Long inventoryUnitId;
+    int chargeDays;
+    int dailyRentalCents;
 }

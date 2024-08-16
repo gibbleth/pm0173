@@ -5,5 +5,7 @@ create table rental_unit (
     rental_id           bigint
                         constraint rental_fk references rental,
     inventory_unit_id   bigint
-                        constraint inventory_unit_fk references inventory_unit
+                        constraint inventory_unit_fk references inventory_unit,
+    charge_days         int,
+    daily_rental_cents  int
 );
