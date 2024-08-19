@@ -15,10 +15,8 @@ public class Rental {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long rentalId;
-    LocalDate reservedDate;
     LocalDate rentedDate;
     LocalDate returnDate;
-    LocalDate actualReturnDate;
     int rentalDays;
     BigDecimal preDiscountCharge;
     BigDecimal discountPercent;

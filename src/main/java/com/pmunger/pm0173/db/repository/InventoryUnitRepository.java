@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface InventoryUnitRepository extends CrudRepository<InventoryUnit, Long> {
     public List<InventoryUnit> findAllByInventoryIdAndRented(Long inventoryId, Boolean rented);
+    public int countAllByInventoryIdAndRented(Long inventoryId, Boolean rented);
 }
