@@ -1,0 +1,15 @@
+Tool:
+    Tool code: [(${toolCode})]
+    Tool type: [(${toolType})]
+    Tool brand: [(${toolBrand})]
+
+Rental:
+    Rental days: [(${rentalDays})]
+    Checkout date: [(${checkoutDate})]
+    Due date: [(${dueDate})]
+    Daily rental charge: [(${dailyRentalCharge})]
+    Charge days: [(${chargeDays})]
+    Pre-discount charge: [(${preDiscountCharge})]
+    Discount percent: [(${discountPercent})]
+    Discount amount: [(${discountAmount})]
+    Final charge: [(${finalCharge})]

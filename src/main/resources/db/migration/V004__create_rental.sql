@@ -1,9 +1,7 @@
 create table rental (
     rental_id           bigint
-                        GENERATED ALWAYS AS IDENTITY
-                        primary key,
-    store_id            bigint
-                        constraint store_fk references store,
+                        PRIMARY KEY
+                        GENERATED ALWAYS AS IDENTITY (start with 1, increment by 1),
     reserved_date       date,
     rented_date         date,
     return_date         date,

@@ -7,7 +7,6 @@ import jakarta.persistence.Id;
 import lombok.Data;
 
 import java.math.BigDecimal;
-import java.sql.Date;
 import java.time.LocalDate;
 
 @Entity
@@ -16,7 +15,6 @@ public class Rental {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long rentalId;
-    Long storeId;
     LocalDate reservedDate;
     LocalDate rentedDate;
     LocalDate returnDate;

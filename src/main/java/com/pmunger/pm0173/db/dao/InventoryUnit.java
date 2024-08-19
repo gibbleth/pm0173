@@ -13,5 +13,5 @@ public class InventoryUnit {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long inventoryUnitId;
     Long inventoryId;
-    Long storeId;
+    Boolean rented;
 }
